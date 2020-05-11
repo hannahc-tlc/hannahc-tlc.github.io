@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>TLC - Launch Facilities</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaC1jcmF5dG9uIiwiYSI6ImNrOXZ2bTY0OTAzZXczZnBtb3M5bHdnanoifQ.D_MDFDwMIsteXnZzVJmb8Q'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/h-crayton/ck9vxhhux020p1im7p5a8pg8s', // replace this with your style URL
+      center: [-115.936, 52.713],
+      zoom: 3
+    });
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['launch-sites'] // replace this with the name of the layer
+      });
+
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+
+      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+        .setLngLat(feature.geometry.coordinates)
+        .setMaxWidth('300')
+        .setHTML('<img src="' + feature.properties.image + '"style="width:266px;height:177px;"><h3>' + feature.properties.title + '</h3><h5><i>'
+         + feature.properties.location + '</i></h5><p>Status: '
+         + feature.properties.status + '</p><p>Flight: '
+         + feature.properties.flight + '</p><p>Launch Pads: '
+         + feature.properties.launch_pads + '</p>')
+        .addTo(map);
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pacific Spaceport Complex",
+        "location": "Kodiak Island, Alaska",
+        "image": "PSPC_site.jpg",
+        "status": "Active",
+        "flight": ["Orbital", "Suborbital"],
+        "launch_pads": ["Launch Pad 1", "Launch Pad 2"]
+      },
+      "geometry": {
+        "coordinates": [-152.368054, 57.443327],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wallops Flight Facility",
+        "location": "Wallops Island, Virginia",
+        "image": "WFF_site.jpg",
+        "status": "Active",
+        "flight": ["Orbital", "Suborbital"],
+        "launch_pads": ["Launch Pad 0-B", "Launch Pad O-A"]
+      },
+      "geometry": {
+        "coordinates": [-75.479386, 37.843726],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
