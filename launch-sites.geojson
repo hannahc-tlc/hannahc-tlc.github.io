@@ -4,10 +4,11 @@
       "type": "Feature",
       "properties": {
         "title": "Pacific Spaceport Complex",
+        "operator": "Alaska Aerospace Corporation",
         "location": "Kodiak Island, Alaska",
         "image": "PSPC_site.jpg",
         "status": "Active",
-        "flight": ["Orbital", "Suborbital"],
+        "flight": ["okay"],
         "launch_pads": ["Launch Pad 1", "Launch Pad 2"]
       },
       "geometry": {
@@ -19,14 +20,31 @@
       "type": "Feature",
       "properties": {
         "title": "Wallops Flight Facility",
+        "operator": "NASA",
         "location": "Wallops Island, Virginia",
         "image": "WFF_site.jpg",
         "status": "Active",
-        "flight": ["Orbital", "Suborbital"],
+        "flight": ["okay"],
         "launch_pads": ["Launch Pad 0-B", "Launch Pad O-A"]
       },
       "geometry": {
         "coordinates": [-75.479386, 37.843726],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Launch Complex 1",
+        "operator": "Rocket Lab",
+        "location": "Mahia, New Zealand",
+        "image": "RL_site.jpg",
+        "status": "Active",
+        "flight": ["okay"],
+        "launch_pads": ["Launch Pad A"]
+      },
+      "geometry": {
+        "coordinates": [177.864876, -39.261500],
         "type": "Point"
       }
     }

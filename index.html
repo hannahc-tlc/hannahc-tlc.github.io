@@ -45,7 +45,9 @@
       var popup = new mapboxgl.Popup({ offset: [0, -15] })
         .setLngLat(feature.geometry.coordinates)
         .setMaxWidth('300')
-        .setHTML('<img src="' + feature.properties.image + '"style="width:266px;height:177px;"><h3>' + feature.properties.title + '</h3><h5><i>'
+        .setHTML('<img src="' + feature.properties.image + '"style="width:266px;height:177px;"><h3>'
+         + feature.properties.title + '</h3><h5>Operated by '
+         + feature.properties.operator + '</h5><h5><i>'
          + feature.properties.location + '</i></h5><p>Status: '
          + feature.properties.status + '</p><p>Flight: '
          + feature.properties.flight + '</p><p>Launch Pads: '
