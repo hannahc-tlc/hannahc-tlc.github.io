@@ -43,7 +43,7 @@
 
       var feature = features[0];
 
-      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+      var popup = new mapboxgl.Popup()
         .setLngLat(feature.geometry.coordinates)
         .setMaxWidth('300')
         .setHTML('<img src="' + feature.properties.image + '"style="width:266px;height:177px;"><h3>'
