@@ -55,15 +55,15 @@
         .addTo(map);
     });
 
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'launch-sites', function() {
-      map.getCanvas().style.cursor = 'pointer';
-    });
+  // Change the cursor to a pointer when the mouse is over the places layer.
+  map.on('mouseenter', 'launch-sites', function() {
+  map.getCanvas().style.cursor = 'pointer';
+  });
  
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'launch-sites', function() {
-      map.getCanvas().style.cursor = '';
-    });
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'launch-sites', function() {
+  map.getCanvas().style.cursor = '';
+  });
     
     </script>
   </body>
