@@ -28,9 +28,10 @@
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/h-crayton/ck9vxhhux020p1im7p5a8pg8s', // replace this with your style URL
-      center: [22.180,-120.673],
+      center: [-120.673, 22.180],
       zoom: 1.91
     });
+    
     map.on('click', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
         layers: ['launch-sites'] // replace this with the name of the layer
@@ -62,7 +63,7 @@
       map.getCanvas().style.cursor = 'pointer';
     });
  
-  // Change it back to a pointer when it leaves.
+    // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'launch-sites', function() {
       map.getCanvas().style.cursor = '';
     });
