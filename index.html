@@ -32,16 +32,25 @@
       zoom: 1.91
     });
     
-    map.on('click', function(e) {
+    map.on('mouseenter', 'launch-sites', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
         layers: ['launch-sites'] // replace this with the name of the layer
       });
+
+      map.getCanvas().style.cursor = 'pointer';
 
       if (!features.length) {
         return;
       }
 
       var feature = features[0];
+
+      map.on('click', 'launch-sites', function(e) {       
+        map.flyTo({
+          center: feature.geometry.coordinates,
+          zoom: 10
+        });
+      });      
 
       var popup = new mapboxgl.Popup()
         .setLngLat(feature.geometry.coordinates)
@@ -59,13 +68,14 @@
       
 
     // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'launch-sites', function() {
-      map.getCanvas().style.cursor = 'pointer';
-    });
+    //map.on('mouseenter', 'launch-sites', function() {
+      //map.getCanvas().style.cursor = 'pointer';
+    //});
  
     // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'launch-sites', function() {
       map.getCanvas().style.cursor = '';
+      popup.remove();
     });
     
     </script>
