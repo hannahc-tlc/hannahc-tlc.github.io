@@ -45,10 +45,10 @@
 
       var feature = features[0];
 
-      map.on('click', 'launch-sites', function(e) {       
+      map.on('click', 'launch-sites', function(e) {     
         map.flyTo({
-          center: feature.geometry.coordinates,
-          zoom: 10
+          center: [feature.properties.long,feature.properties.lat],
+          zoom: feature.properties.zoom
         });
       });      
 
@@ -65,13 +65,6 @@
         .addTo(map);
     });
 
-      
-
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    //map.on('mouseenter', 'launch-sites', function() {
-      //map.getCanvas().style.cursor = 'pointer';
-    //});
- 
     // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'launch-sites', function() {
       map.getCanvas().style.cursor = '';

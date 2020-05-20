@@ -9,10 +9,13 @@
         "image": "PSPC_site.jpg",
         "status": "Active",
         "flight": ["okay"],
-        "launch_pads": ["Launch Pad 1", "Launch Pad 2"]
+        "launch_pads": ["Launch Pad 1", "Launch Pad 2"],
+        "zoom": 14.66,
+        "lat": 57.439,
+        "long": -152.35
       },
       "geometry": {
-        "coordinates": [-152.368054, 57.443327],
+        "coordinates": [-152.355422, 57.440843],
         "type": "Point"
       }
     },
@@ -25,7 +28,10 @@
         "image": "WFF_site.jpg",
         "status": "Active",
         "flight": ["okay"],
-        "launch_pads": ["Launch Pad 0-B", "Launch Pad O-A"]
+        "launch_pads": ["Launch Pad 0-B", "Launch Pad O-A"],
+        "zoom": 13.52,
+        "lat": 37.842,
+        "long": -75.470
       },
       "geometry": {
         "coordinates": [-75.479386, 37.843726],
@@ -41,7 +47,10 @@
         "image": "RL_site.jpg",
         "status": "Active",
         "flight": ["okay"],
-        "launch_pads": ["Launch Pad A"]
+        "launch_pads": ["Launch Pad A"],
+        "zoom": 15.09,
+        "lat": -39.262,
+        "long": 177.866
       },
       "geometry": {
         "coordinates": [177.864876, -39.261500],
