@@ -60,7 +60,8 @@
          + feature.properties.operator + '</h5><h5><i>'
          + feature.properties.location + '</i></h5><p>Status: '
          + feature.properties.status + '</p><p>Flight: '
-         + feature.properties.flight + '</p><p>Launch Pads: '
+         + feature.properties.flight + '</p><p>Inclinations: '
+         + feature.properties.inclinations + '</p><p>Launch Pads: '
          + feature.properties.launch_pads + '</p>')
         .addTo(map);
     });
@@ -68,7 +69,6 @@
     // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'launch-sites', function() {
       map.getCanvas().style.cursor = '';
-      popup.remove();
     });
     
     </script>
