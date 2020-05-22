@@ -8,7 +8,7 @@
         "location": "Kodiak Island, Alaska",
         "image": "PSPC_site.jpg",
         "status": "Active",
-        "flight": "Suborbital, Low-earth-orbits, polar, sun-synchronous, highly eliptical",
+        "flight": "Suborbital, Low-earth-orbits, polar,<br>sun-synchronous, highly eliptical</br>",
         "inclinations": "59.6° - 110.2°",
         "launch_pads": "Launch Pad 1, Launch Pad 2",
         "zoom": 14.66,
