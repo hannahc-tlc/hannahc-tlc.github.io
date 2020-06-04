@@ -12,6 +12,7 @@
         "status": "Active",
         "flight": "Suborbital, Low-earth-orbits, polar,<br>sun-synchronous</br>",
         "inclinations": "59.6° - 110.2°",
+        "incpic": "PSPC-inc-pic.jpg",
         "launch_pads": "Launch Pad 1, Launch Pad 2",
         "zoom": 14.66,
         "lat": 57.439,
@@ -34,6 +35,7 @@
         "status": "Active",
         "flight": "Sub-orbital, low-earth-orbit.",
         "inclinations": "38° - 60°",
+        "incpic": "WFF-inc-pic.jpg",
         "launch_pads": "Launch Pad 0-B, Launch Pad O-A",
         "zoom": 13.52,
         "lat": 37.842,
@@ -47,44 +49,23 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Launch Complex 1",
-        "operator": "Rocket Lab",
-        "location": "Mahia, New Zealand",
-        "image": "RL_site.jpg",
-        "link": "https://www.rocketlabusa.com/assets/Uploads/Rocket-Lab-Payload-Users-Guide-6.4-2020.pdf",
-        "guide": "Payload User's Guide",
+        "title": "Vandenberg AFB",
+        "operator": "United States Air Force",
+        "location": "Santa Barbara County, California",
+        "image": "VAFB_site.jpg",
+        "link": "https://www.vandenberg.af.mil/range.aspx",
+        "guide": "Range Information",
         "status": "Active",
         "flight": "Low-earth-orbit, polar, sun-synchronous",
-        "inclinations": "39° - 98°",
-        "launch_pads": "Launch Pad A",
-        "zoom": 15.09,
-        "lat": -39.262,
-        "long": 177.866
+        "inclinations": "TBD° - TBD°",
+        "incpic": "VAFB-inc-pic.jpg",
+        "launch_pads": "SLC-3, SLC-4, SLC-6, SLC-8",
+        "zoom": 12.20,
+        "lat": 34.604,
+        "long": -120.587
       },
       "geometry": {
-        "coordinates": [177.864876, -39.261500],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "NEW ONE",
-        "operator": "Rocket Lab",
-        "location": "Mahia, New Zealand",
-        "image": "RL_site.jpg",
-        "link": "https://www.rocketlabusa.com/assets/Uploads/Rocket-Lab-Payload-Users-Guide-6.4-2020.pdf",
-        "guide": "Payload User's Guide",
-        "status": "Active",
-        "flight": "Low-earth-orbit, polar, sun-synchronous",
-        "inclinations": "39° - 98°",
-        "launch_pads": "Launch Pad A",
-        "zoom": 15.09,
-        "lat": -39.262,
-        "long": 177.866
-      },
-      "geometry": {
-        "coordinates": [177.864876, -39.261500],
+        "coordinates": [-120.588, 34.599],
         "type": "Point"
       }
     }
