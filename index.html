@@ -56,6 +56,8 @@
        + '<br></br><br></br>'
        + '<img src = "rocketlaunch.png" style = "max-width:95%;max-height:100%""></p>')
 
+    var popup = new mapboxgl.Popup()
+
     map.on('mouseenter', 'launch-sites', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
         layers: ['launch-sites'] // replace this with the name of the layer
@@ -99,16 +101,18 @@
          + feature.properties.guide + '</a></p><p><b>Orbital Inclination Range</b></p><p><img src="'
          + feature.properties.incpic + '"style="width:372px;height:247px;"></p>')
       
-      var popup = new mapboxgl.Popup()
+      popup
         .setLngLat(feature.geometry.coordinates)
         .setMaxWidth('300')
         .setHTML('<center><h3>'+feature.properties.title+'</h3><p>'+feature.properties.location+'</p></center>')
         .addTo(map);
+    
     });
 
     // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'launch-sites', function() {
       map.getCanvas().style.cursor = '';
+      popup.remove();
     });
     
     </script>
