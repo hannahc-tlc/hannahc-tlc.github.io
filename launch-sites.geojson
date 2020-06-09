@@ -3,7 +3,7 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Pacific Spaceport Complex",
+        "title": "Pacific Spaceport Complex Alaska",
         "operator": "Alaska Aerospace Corporation",
         "location": "Kodiak Island, Alaska",
         "image": "PSPC_site.jpg",
@@ -57,7 +57,7 @@
         "guide": "Range Information",
         "status": "Active",
         "flight": "Low-earth-orbit, polar, sun-synchronous",
-        "inclinations": "TBD° - TBD°",
+        "inclinations": "70° - 104°",
         "incpic": "VAFB-inc-pic.jpg",
         "launch_pads": "SLC-3, SLC-4, SLC-6, SLC-8",
         "zoom": 12.20,
@@ -66,6 +66,52 @@
       },
       "geometry": {
         "coordinates": [-120.588, 34.599],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "John F. Kennedy Space Center",
+        "operator": "NASA",
+        "location": "Merritt Island, Florida",
+        "image": "KSC_site.jpg",
+        "link": "https://kscsma.ksc.nasa.gov/RangeSafety/reqDocs/DoDlinks",
+        "guide": "Range Information",
+        "status": "Active",
+        "flight": "Low-earth-orbit, equatorial, sun-synchronous",
+        "inclinations": "39° - 57°",
+        "incpic": "KSC-inc-pic.jpg",
+        "launch_pads": "LC-39A, LC-39B",
+        "zoom": 13.22,
+        "lat": 28.604,
+        "long": -80.626
+      },
+      "geometry": {
+        "coordinates": [-80.636, 28.599],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cape Canaveral Air Force Station",
+        "operator": "United States Air Force",
+        "location": "Brevard County, Florida",
+        "image": "CCAFS_site.jpg",
+        "link": "https://www.patrick.af.mil/About-Us/New-Customer-Information/",
+        "guide": "Customer Information Page",
+        "status": "Active",
+        "flight": "Low-earth-orbit, equatorial, sun-synchronous",
+        "inclinations": "39° - 57°",
+        "incpic": "CCAFS-inc-pic.jpg",
+        "launch_pads": "LZ-1, LZ-2, SLC-37B, SLC-40, SLC-41",
+        "zoom": 12.35,
+        "lat": 28.485,
+        "long": -80.554
+      },
+      "geometry": {
+        "coordinates": [-80.572, 28.491],
         "type": "Point"
       }
     }
