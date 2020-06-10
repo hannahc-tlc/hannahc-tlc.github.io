@@ -114,6 +114,29 @@
         "coordinates": [-80.572, 28.491],
         "type": "Point"
       }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Mojave Air & Space Port",
+        "operator": "Mojave Air and Space Port",
+        "location": "Mojave, California",
+        "image": "MASP_site.jpg",
+        "link": "https://www.mojaveairport.com/testing.html",
+        "guide": "Testing Information Page",
+        "status": "Active",
+        "flight": "Horizontal",
+        "inclinations": "--",
+        "incpic": "--",
+        "launch_pads": "--",
+        "zoom": 13.64,
+        "lat": 35.059,
+        "long": -118.144
+      },
+      "geometry": {
+        "coordinates": [-118.155, 35.057],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
