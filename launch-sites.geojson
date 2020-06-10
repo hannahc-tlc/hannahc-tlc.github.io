@@ -115,7 +115,7 @@
         "type": "Point"
       }
     },
-       {
+    {
       "type": "Feature",
       "properties": {
         "title": "Mojave Air & Space Port",
@@ -135,6 +135,29 @@
       },
       "geometry": {
         "coordinates": [-118.155, 35.057],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Spaceport America",
+        "operator": "the State of New Mexico",
+        "location": "Sierra County, New Mexico",
+        "image": "SA_site.jpg",
+        "link": "https://www.spaceportamerica.com/business/launch/",
+        "guide": "Launch Information Page",
+        "status": "Active",
+        "flight": "Horizontal, Vertical",
+        "inclinations": "--",
+        "incpic": "--",
+        "launch_pads": "--",
+        "zoom": 13.87,
+        "lat": 32.989,
+        "long": -106.977
+      },
+      "geometry": {
+        "coordinates": [-106.973, 32.992],
         "type": "Point"
       }
     }
