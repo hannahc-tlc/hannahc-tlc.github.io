@@ -57,6 +57,32 @@
        + '<img src = "rocketlaunch.png" style = "max-width:95%;max-height:100%""></p>')
 
     var popup = new mapboxgl.Popup()
+    var padpopup = new mapboxgl.Popup()
+
+    map.on('mouseenter', 'launch-pads', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['launch-pads']
+      });
+
+      map.getCanvas().style.cursor = 'pointer';
+
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+
+      padpopup
+        .setHTML('<center><h3>'+feature.properties.pad+'</h3><p>'+feature.properties.site+'</p></center>')
+        .trackPointer()
+        .addTo(map);
+
+    });
+
+    map.on('mouseleave', 'launch-pads', function() {
+      map.getCanvas().style.cursor = '';
+      padpopup.remove();
+    });
 
     map.on('mouseenter', 'launch-sites', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
